@@ -42,7 +42,7 @@ img{
   
     img {
         height: 100%;
-        border-radius: 50%; 
+        border-radius: 100%; 
         object-fit: cover;
     }
   
@@ -59,11 +59,13 @@ img{
     }
   }
   @media screen and (min-width: 992px) {
-  
-    }
     img {
       border-radius: 0;
     }  
+    figure img:nth-child(3n) {
+      width: 100%;
+    }
+  }
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
@@ -79,3 +81,4 @@ img{
         border-color: black;
     }
   }
+ 
